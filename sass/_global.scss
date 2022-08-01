@@ -1,0 +1,57 @@
+.global {
+  background: $fourth_color;
+  padding: 70px 0 0 0;
+  font-family: $font_family;
+  &_heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: $third_color;
+    max-width: 375px;
+    margin: 0 auto 235px auto;
+    text-align: center;
+  }
+  &_img {
+    max-width: 1060px;
+    margin: 0 auto 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+  .global {
+    background: $fourth_color;
+    padding: 70px 0 0 0;
+    &_heading {
+      font-size: 48px;
+      line-height: 68px;
+      max-width: 78%;
+      margin: 0 auto 144px auto;
+    }
+    &_img {
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .global {
+    background: $fourth_color;
+    padding: 40px;
+    &_heading {
+      font-size: 30px;
+      line-height: 42px;
+      max-width: 78%;
+      margin: 0 auto 78px auto;
+    }
+    &_img {
+      max-width: 1060px;
+      margin: 0 auto 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

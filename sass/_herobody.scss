@@ -1,0 +1,112 @@
+.herobody{
+    padding: 0 130px 130px 130px;
+    font-family: $font_family;
+    &_img{
+        .herobody_wrapper{
+            max-width: 508px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &_content{
+        h2{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+            margin-top: 55px;
+            margin-bottom: 20px;
+            max-width: 383px;
+        }
+        p{
+            color: $second_color;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            max-width: 405px;
+        }
+        ul{
+            li{
+                margin-bottom: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                i{
+                    margin-right: 10px;
+                    color: $fifth_color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+    .herobody {
+        padding: 100px 60px;
+        &_img{
+            .herobody_wrapper{
+                max-width: 100%;
+                margin-bottom: 28px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        &_content{
+            h2{
+                font-size: 52px;
+                line-height: 76px;
+                margin-top: 55px;
+                margin-bottom: 40px;
+                max-width: 100%;
+                text-align: center;
+            }
+            p{
+                font-size: 34px;
+                line-height: 47px;
+                margin-bottom: 55px;
+                max-width: 100%;
+                text-align: center;
+            }
+            ul{
+                margin: 0 auto;
+                max-width: fit-content;
+                li{
+                    margin-bottom: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 34px;
+                    line-height: 30px;
+                    color: $second_color;
+                    i{
+                        margin-right: 10px;
+                        color: $fifth_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .herobody {
+        padding: 40px;
+        &_content{
+            h2{
+                font-size: 30px;
+                margin-top: 55px;
+                margin-bottom: 20px;
+                max-width: 100%;
+                text-align: center;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 27px;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

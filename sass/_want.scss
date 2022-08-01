@@ -1,0 +1,110 @@
+.want{
+    margin-top: 179px;
+    padding: 0 130px;
+    &_hero{
+        padding: 0;
+        .hero_heading{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 70px;
+            margin-bottom: 20px;
+            margin-top: 27px;
+
+        }
+        .hero_desc{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 34px;
+        }
+        .hero_btn{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            background: #F53838;
+            border-radius: 10px;
+            padding: 18px 77px;
+            color: #fff;
+            border: 0;
+            box-shadow: #F53838 0px 5px 15px;
+        }
+    }
+    &_img{
+        margin-left: 0;
+        .want_wrapper{
+            max-width: 611px;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+    .want{
+        padding: 0 60px;
+        &_hero .hero_heading {
+            margin-bottom: 57px;
+            margin-top: 46px;
+            text-align: center;
+        }
+        &_hero .hero_desc {
+            font-size: 33px;
+            text-align: center;
+            margin-bottom: 34px;
+            line-height: 42px;
+        }
+        &_hero .hero_btn {
+            font-size: 27px;
+            border-radius: 17px;
+            padding: 34px 77px;
+            margin: 60px auto 100px auto;
+            display: block;
+            width: 100%;
+        }
+        &_img .want_wrapper {
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .want{
+        padding: 0 20px;
+        &_hero .hero_heading {
+            margin-bottom: 31px;
+            margin-top: 0;
+            line-height: 47px;
+            text-align: center;
+            font-size: 32px;
+        }
+        &_hero .hero_desc {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 0;
+            line-height: 29px;
+        }
+        &_hero .hero_btn {
+            font-size: 16px;
+            border-radius: 17px;
+            padding: 16px 77px;
+            margin: 60px auto 100px auto;
+            display: block;
+            margin-top: 39px;
+            margin-bottom: 50px;
+            width: 90%;
+        }
+        &_img .want_wrapper {
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+

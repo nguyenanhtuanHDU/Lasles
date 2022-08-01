@@ -1,0 +1,252 @@
+.plan{
+    padding: 80px 130px;
+    background-color: $fourth_color;
+    font-family: $font_family;
+    &_heading{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+    }
+    &_title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    &__item{
+        padding: 0 25px;
+    }
+    &___item{
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+        height: 760px;
+        background-color: #fff;
+        padding: 80px 0 50px 0;
+        &.active{
+            border: 2px solid $primary_color;
+        }
+    }
+    &_img{
+        max-width: 144px;
+        margin: 0 auto 30px auto;
+        img{
+            width: 100%;
+        }
+    }
+    &_name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: $third_color;
+        margin-bottom: 30px;
+    }
+    &_list{
+        list-style: none;
+        margin:  0 auto;
+        max-width: 190px;
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            i{
+                color: $fifth_color;
+                font-size: 14px;
+                margin-right: 20px;
+            }
+            p{
+                white-space: nowrap;
+                margin: auto 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                color: $second_color;
+            }
+        }
+    }
+    &_cost{
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        @include absoluteCenter('left');
+        h5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: $third_color;
+            p{
+                color: $second_color;
+                margin: 0 5px;
+            }
+        }
+        button{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: $primary_color;
+            border: 1px solid;
+            border-radius: 888px;
+            padding: 13px 62px;
+            background-color: #fff;
+            &.active{
+                background-color: $primary_color;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+    .plan{
+        padding: 100px 60px;
+        &_heading {
+            font-size: 48px;
+            margin-bottom: 43px;
+        }
+        &_title {
+            font-size: 33px;
+            line-height: 42px;
+            margin-bottom: 82px;
+            margin-top: 20px;
+        }
+        &___item {
+            border-radius: 20px;
+            height: fit-content;
+            margin-bottom: 70px;
+            background-color: #fff;
+            padding: 80px 32px 50px 32px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        &_img {
+            max-width: 225px;
+            margin: 0 auto 60px auto;
+        }
+        &_name {
+            font-size: 33px;
+            margin-bottom: 78px;
+        }
+        &_list{
+            max-width: fit-content;
+            margin-bottom: 42px;
+
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                i{
+                    font-size: 27px;
+                    margin-right: 34px;
+                }
+                p{
+                    font-size: 27px;
+                }
+            }
+        }
+        &_cost{
+            position: relative;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            margin:  auto 0;
+            h5{
+                font-size: 44px;
+                margin-bottom: 61px;
+                margin-top: 67px;
+                p{
+
+                }
+            }
+            button{
+                font-size: 30px;
+                padding: 38px 62px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .plan{
+        padding: 40px;
+        &_heading {
+            font-size: 30px;
+            margin-bottom: 43px;
+        }
+        &_title {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 82px;
+            margin-top: 20px;
+        }
+        &___item {
+            border-radius: 20px;
+            height: fit-content;
+            margin-bottom: 70px;
+            background-color: #fff;
+            padding: 80px 32px 50px 32px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        &_img {
+            max-width: 122px;
+            margin: 0 auto 26px auto;
+        }
+        &_name {
+            font-size: 20px;
+            margin-bottom: 26px;
+        }
+        &_list{
+            max-width: fit-content;
+            margin-bottom: 42px;
+
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                i{
+                    font-size: 15px;
+                    margin-right: 14px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        &_cost{
+            position: relative;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            margin:  auto 0;
+            h5{
+                font-size: 29px;
+                margin-bottom: 30px;
+                margin-top: 60px;
+                p{
+
+                }
+            }
+            button{
+                font-size: 19px;
+                padding: 14px 62px;
+            }
+        }
+    }
+}

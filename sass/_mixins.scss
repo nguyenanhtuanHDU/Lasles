@@ -1,0 +1,16 @@
+@mixin absoluteCenter($value: 'top') {
+    position: absolute;
+    @if $value == 'top'{
+        top: 50%;
+        transform: translateY(-50%);
+    }    
+    @if $value == 'left'{
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+    @if $value == 'all'{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }    
+}

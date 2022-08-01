@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./want";
+@import "./achievement";
+@import "./herobody";
+@import "./plan";
+@import "./global";
+@import "./sponsor";
+@import "./people";
+@import "./footer";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    // min-width: fit-content;
+    font-family: $font_family;
+    font-style: $font_style;
+}
+body{
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+  
